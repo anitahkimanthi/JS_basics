@@ -1,0 +1,63 @@
+html,
+body {
+    background: #ccc;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+span{
+    color: rgb(92, 90, 90)
+}
+.parent {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+
+}
+
+.wrapper {
+    background: #fff;
+    padding: 40px;
+    max-width:1000px;
+    flex-wrap: wrap;
+}
+
+figure {
+    margin-block-end: 0 !important;
+}
+
+pre,
+code {
+    font-family: monospace, monospace;
+}
+
+pre {
+    overflow: hidden;
+    background-color: #F5F2F0;
+    color:rgb(139, 138, 138);
+    min-width: 100%;
+    padding-left: 10px;
+    overflow-x: inherit;
+}
+
+pre>code {
+    display: block;
+    word-wrap: normal;
+    padding: 1rem 1rem;
+}
+
+figure {
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    top: 1.3rem;
+    left: 1rem;
+    font-size: small;
+    font-style: italic;
+    color: #6c5f7c;
+}

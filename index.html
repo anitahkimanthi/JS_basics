@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+    <link rel="stylesheet" href="prism.css">
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="wrapper">
+            <div class="variables">
+                <div id="variable">
+                    <h3>Variables</h3>
+                    <p>Variable means anything that can vary. JavaScript includes variables which hold the data value
+                        and it can be changed anytime. You can declare variable and assign the values to them at same time, and use the values to find the missing value of the variable given without a value ie var a =3; var 1; var c; c = a + b. </p>
+                    <p>You can declare the variables first and assign the values to them later , or declare and assign the value at the same time. </p>
+                    <h4>Results</h4>
+                      <pre> <div id="missingletter"></div> </pre>
+            
+                    <figure>
+                        <figcaption>Index.js</figcaption>
+                        <pre>
+                            <code class="language-javascript">
+// Declaring and assigning at the same time / place
+    var a = 3;  // declaring variable b and assigning a value to it
+    var b = 1;  // declaring variable b and assigning a value to it
+    var c;  // declare the variable c and find its value.
+
+    b += 10  // plus 10 the value of b
+    c = a + b  // finding value of c
+
+    document.getElementById("missingletter").innerHTML = c ; // show output in html
+    console.log(c) // show output in console
+
+    // value of c is 14
+
+    // Declaring the variables without assigning values
+    var a;
+    var b;
+    var c;
+           
+    // Assigning values to the variables declared
+    a = 3
+    b = 1 + 10
+    c =  a + b
+
+    document.getElementById("variable").innerHTML = c ; // show output in html
+    console.log(c) // show output in console
+
+    // value of c is 14
+                                 
+                            </code>
+                        </pre>
+                    </figure>
+                </div>
+            </div>
+
+            <br>
+            <div class="Bodmas">
+                <h3>JavaScript Arithmetic Operations
+</h3>
+                <span>1) Addition</span>
+                <p>The addition operator <mark>(+) </mark> adds numbers:</p>
+                <div class="addition">
+                    <h4>Results</h4>
+                    <pre> <div id="addition"></div> </pre>
+                    <figure>
+                        <figcaption>Index.js</figcaption>
+                        <pre>
+                            <code class="language-javascript">
+var sum = 10 + 10 // normal addition 
+
+document.getElementById("addition").innerHTML = sum; // show output in html
+console.log(a) // show output in console
+
+// Output
+// 20
+                            </code>
+                        </pre>
+                    </figure>
+                </div>
+                <br>   
+                <div class="Substraction">
+                     <span>2) Substraction</span>
+                     <p>The subtraction operator <mark>(-)</mark>  subtracts numbers.</p>
+                    <h4>Results</h4>
+                     <pre> <div id="Substraction"></div> </pre>
+                   
+                    <figure>
+                        <figcaption>Index.js</figcaption>
+                        <pre>
+                            <code class="language-javascript">
+var substraction = 20 - 10 // munus
+document.getElementById("Substraction").innerHTML = Substraction; // show output in html
+console.log(Substraction) // show output in console
+
+// Output
+// 10
+                            </code>
+                        </pre>
+                    </figure>
+                </div>
+                 <br>
+                <div class="multiplication">
+                    <span>3) Multiplication</span>
+                    <p>The multiplication operator <mark>(*)</mark>  multiplies numbers.</p>
+                    
+                    <h4>Results</h4>
+                    <pre> <div id="multiplication" > </div> </pre> 
+                    <figure>
+                        <figcaption>Index.js</figcaption>
+                        <pre>
+                            <code class="language-javascript">
+var multiply = 10 * 10
+document.getElementById("multiplication").innerHTML = multiply; // show output in html
+console.log(multiply) // show output in console
+
+ //Output
+ // 100
+                            </code>
+                        </pre>
+                    </figure>
+                </div>
+                 <br>
+                <div class="divide">
+                    <span>4) Division</span>
+                    <p>sharing a number into equal parts using a operator <mark>(/)</mark> </p>
+                    <pre> <div id="divide"> </div> </pre>
+                    <figure>
+                        <figcaption>Index.js</figcaption>
+                        <pre>
+                            <code class="language-javascript">
+var divide = 20 / 2
+
+document.getElementById("divide").innerHTML = divide; // show output in html
+console.log(divine) // show output in console
+
+// Output
+// 10
+                            </code>
+                        </pre>
+                    </figure>
+                </div>
+                 <br>
+                <div class="remainder">
+                    <span> 5) Remainder</span>
+                    <p>he remainder is the integer "left over" after dividing one integer by another to produce an
+                        integer quotient. The remainder in JavaScript is performed by percentage operator <mark>( % )</mark> </p>
+                   <h4>Results</h4>
+                    <pre> <div id="remainder"> </div> </pre> 
+                    <figure>
+                        <figcaption>Index.js</figcaption>
+                        <pre>
+                            <code class="language-javascript">
+var remainder = 11 % 2 // use percentage symbol for divition
+document.getElementById("remainder").innerHTML = remainder; // show output in html
+console.log(remainder) // show output in console
+
+// Output
+// 1
+                            </code>
+                        </pre>
+                    </figure>
+                </div>
+                 <br>
+                <div class="stringAdd">
+                    <h3>Adding strings</h3>
+                    <p>Making a single string by connecting different strings by addition symbol.</p>
+                    
+                    <h4>Results</h4>
+                    <pre> <div id="stringAdd"></div> </pre>
+                    <figure>
+                        <figcaption>Index.js</figcaption>
+                        <pre>
+                            <code class="language-javascript">
+var name = "anita"
+var verb = "goes"
+var place = "to schools"
+var days = "Monday to Friday"
+
+sentence = name + verb + place + days
+document.getElementById("stringAdd").innerHTML = sentence; // show output in html
+console.log(sentence) // show output in console
+
+// Output
+// Anita goes to schools from Monday to Friday
+                            </code>
+                        </pre>
+                    </figure>
+                </div>
+            </div>
+             <br>
+            <div class="array">
+
+                <h3>Array</h3>
+                <p>Nested arrays</p>
+                
+                <h4>Results</h4>
+               <pre> <div id=array> </div> </pre> 
+                <br>
+                <figure>
+                    <figcaption>index.js</figcaption>
+                    <pre>
+                        <code class="language-javascript">
+var myarray = [
+[" Anita ", " Maryann ", " Paul ", " Damaris ", " Edward ", " James ", " Kelly "],
+[" Mercy ", " Anita ", " pauline ", " Dorcus ", " Edwin ", " Jacob ", " Kennedy "],
+[" Helen ", " Dorminic ", " Irene ", " maureen ", " Emmy ", " Cate ", " Moses "]
+]
+
+document.getElementById("array").innerHTML = myarray;
+console.log(myarray) // show output in console
+
+// Output
+// Anita , Maryann , Paul , Damaris , Edward , James , Kelly , Mercy , Anita , pauline , Dorcus , Edwin , Jacob , Kennedy ,
+// Helen , Dorminic , Irene , maureen , Emmy , Cate , Moses
+                    </code>
+                  </pre>
+                </figure>
+            </div>
+             <br>
+            <div class="wordlank">
+                <h3>word blank</h3>
+                <p>Filling the blank spaces with words to make a sensible statement</p>
+                
+                <h4>Results</h4>
+                <pre> <div id=wordblank></div> </pre>
+                <br>
+                <figure>
+                    <figcaption>index.js</figcaption>
+                    <pre>
+                        <code class="language-javascript">
+function fillwords(gender, age, city, career) {
+    results = "The " + gender + " " + "talking is " + age + " years old" + " from " + city + " pursuing diploma in " +
+    career
+    return results
+}
+fillwords();
+
+console.log(fillwords("girl", "20", "Nairobi", "Web design"))
+
+document.getElementById("wordblank").innerHTML = results // output in html
+console.log(results) // show output in console
+
+// Output 
+// The girl talking is 20 years old from Nairobi pursuing diploma in Web design
+
+                        </code>
+                    </pre>
+                </figure>
+            </div>
+             <br>
+            <div class="lastname">
+                <h3>showing the last name of the last array</h3>
+                <p>Getting the value you want from the arrays, you should know on which index the value lies, so as to target the last array with <pre>length-1 and [1] - index</pre> </p>
+                
+                <h4>Results</h4>
+                <pre> <div id=lastname></div> </pre>
+                <figure>
+                    <figcaption>Index.js</figcaption>
+                    <pre>
+                        <code class="language-javascript">
+// array and values
+var myarray = [
+[" Anita ", " Maryann ", " Paul ", " Damaris ", " Edward ", " James ", " Kelly "],
+[" Mercy ", " Anita ", " pauline ", " Dorcus ", " Edwin ", " Jacob ", " Kennedy "],
+[" Helen ", " Dorminic ", " Irene ", " maureen ", " Emmy ", " Cate ", " Moses "]
+]
+
+var lastnameInarray = myarray[myarray.length - 1]// getting the last array of the last element
+
+document.getElementById("lastname").innerHTML = lastnameInarray; // show output in html
+console.log(lastnameInarray) // show output in console
+
+// Output
+// Helen , Dorminic , Irene , maureen , Emmy , Cate , Moses
+                        </code>
+                    </pre>
+                </figure>
+            </div>
+             <br>
+            
+            <div class="length">
+                <h3>showing length of my name</h3>
+                <p>shoing the number of letters in the word using <mark>length</mark></p>
+                
+                <h4>Results</h4>
+                <pre> <div id=length></div> </pre>
+                <figure>
+                    <figcaption>
+                        index.js
+                    </figcaption>
+                    <pre>
+                        <code class="language-javascript">
+var number = 0 // initial value is 0
+var name = "anita" // the value
+length = name.length // all leters in the variable anita
+
+document.getElementById("length").innerHTML = length; // show output in html
+console.log(length) // show output in console
+
+// Output
+// 5
+                        </code>
+                    </pre>
+                </figure>
+            </div>
+             <br>
+
+            <div class="manipulating-string">
+                <h3>Strings</h3>
+                
+                <h4>Results</h4>
+                <pre> <div id="myString"></div> </pre>
+                <div id="myStringEscapeQuotes"></div>
+                <div id="doubleAndSingleQuotes"></div>
+                <!-- <div id="manipulating-string"></div> -->
+                <br>
+                
+                <figure>
+                    <figcaption> index.js</figcaption>
+                    <pre>
+                    <code class="language-javascript">
+// escaping a literal quotes in a string
+// a string can be in a single or double quotes
+
+// strings
+myString = "I love code, everything to do with code"
+document.getElementById("myString").innerHTML = myString; // show output in html
+console.log(myString) // show output in console
+
+// Output
+// I love code, everything to do with code
+
+// use \ to escape character in a double quotes
+var myStringEscapeQuotes = "I am \" Developer \" I love coding in JavaScript\""
+document.getElementById("myStringEscapeQuotes").innerHTML = myStringEscapeQuotes; // show output in html
+console.log(myStringEscapeQuotes) // show output in html
+
+// Output
+// I am " Developer " I love coding in JavaScript and html
+
+// use single quote outside a double quotes characters
+var doubleAndSingleQuotes = 'Html is " basic code " for all beginners" '
+document.getElementById("doubleAndSingleQuotes").innerHTML = doubleAndSingleQuotes; // show output in html
+console.log(doubleAndSingleQuotes) // show output in console
+
+// Output
+// Html is " basic code " for all beginners"
+
+// use \n for next line and \t for tab
+var myStringManipulation = 'I am first line \n\t\ I am second line with tab \n I am a third line"'
+
+document.getElementById("manipulating-string").innerHTML = myStringManipulation; // output in html
+console.log(myStringManipulation)
+
+// results in console
+// I am first line
+    // I am second line with tab
+// I am a third line
+
+                    </code>
+                </pre>
+                
+                </figure>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="app.js"></script> -->
+    <script src="index.js"></script>
+    <script src="prism.js"></script>
+</body>
+
+</html>
