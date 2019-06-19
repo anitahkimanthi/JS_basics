@@ -76,6 +76,9 @@
                             <code class="language-javascript">
 var sum = 10 + 10 // normal addition 
 
+var sum = 10
+sum += 10  // use += operator to add the number to the given value
+
 document.getElementById("addition").innerHTML = sum; // show output in html
 console.log(a) // show output in console
 
@@ -97,6 +100,10 @@ console.log(a) // show output in console
                         <pre>
                             <code class="language-javascript">
 var substraction = 20 - 10 // munus
+
+var substraction = 20
+substraction -= 10 // reduce number by -= operator
+
 document.getElementById("Substraction").innerHTML = Substraction; // show output in html
 console.log(Substraction) // show output in console
 
@@ -117,7 +124,12 @@ console.log(Substraction) // show output in console
                         <figcaption>Index.js</figcaption>
                         <pre>
                             <code class="language-javascript">
-var multiply = 10 * 10
+var multiply = 10 * 10  // use * to multiply a number--
+
+
+var multiply = 10
+multiply *= 10  // multiply by *= operator
+
 document.getElementById("multiplication").innerHTML = multiply; // show output in html
 console.log(multiply) // show output in console
 
@@ -136,7 +148,10 @@ console.log(multiply) // show output in console
                         <figcaption>Index.js</figcaption>
                         <pre>
                             <code class="language-javascript">
-var divide = 20 / 2
+var divide = 20 / 2 // slash operator to divide
+
+var divide = 20 
+divide /= 2 // use /= to divide the value to the number given
 
 document.getElementById("divide").innerHTML = divide; // show output in html
 console.log(divine) // show output in console
@@ -150,7 +165,7 @@ console.log(divine) // show output in console
                  <br>
                 <div class="remainder">
                     <span> 5) Remainder</span>
-                    <p>he remainder is the integer "left over" after dividing one integer by another to produce an
+                    <p>The remainder is the integer "left over" after dividing one integer by another to produce an
                         integer quotient. The remainder in JavaScript is performed by percentage operator <mark>( % )</mark> </p>
                    <h4>Results</h4>
                     <pre> <div id="remainder"> </div> </pre> 
@@ -159,6 +174,10 @@ console.log(divine) // show output in console
                         <pre>
                             <code class="language-javascript">
 var remainder = 11 % 2 // use percentage symbol for divition
+
+var remainder = 11
+remainder %= 2 // use %= to show the remainder after after the number is divided evenly
+
 document.getElementById("remainder").innerHTML = remainder; // show output in html
 console.log(remainder) // show output in console
 
@@ -168,10 +187,146 @@ console.log(remainder) // show output in console
                         </pre>
                     </figure>
                 </div>
+                <br>
+                <div class="increment">
+                    <h3>Incrementing number</h3> 
+                    <p>Incrementing is adding <mark >1</mark> to the given number. The increment in JavaScript is performed by operator <mark>(++)</mark> eg; number++ or var number= 22 + 1</p>
+                    <h4>Results</h4>
+                    <pre> <div id="increment"></div> </pre>
+                    <figure>
+                        <figcaption>Index.js</figcaption>
+                        <pre>
+                                            <code class="language-javascript">
+var number = 22 // declaring and assigning value
+
+number = 22 + 1 // adding 1 to value by plus to the number 
+
+// or
+
+number++  // using ++ to add 1 to the value
+
+document.getElementById("increment").innerHTML = number; // show output in html
+console.log(number) // show output in console
+                
+// Output
+// 23
+                                            </code>
+                                        </pre>
+                    </figure>
+                </div>
+
+                <div class="increment">
+                    <h3>Decrementing number</h3>
+                    <p>Decrementing is reducing a given number by <mark>1</mark>. The increment in JavaScript is performed by operator
+                        <mark>(--)</mark> eg; number--  or  var number = 22 - 1 </p>
+                    <h4>Results</h4>
+                    <pre> <div id="increment"></div> </pre>
+                    <figure>
+                        <figcaption>Index.js</figcaption>
+                        <pre>
+                             <code class="language-javascript">
+var number = 22 // declaring and assigning value
+                
+number = 22 - 1 // adding 1 to value by plus to the number 
+                
+// or
+                
+number--  // using -- to add 1 to the value
+                
+document.getElementById("increment").innerHTML = number; // show output in html
+console.log(number) // show output in console
+                                
+// Output
+// 21
+                            </code>
+                        </pre>
+                    </figure>
+                </div>
+                
                  <br>
+
+                <div class="manipulating-string">
+
+                    <div class="single-array">
+                        <h3>Strings</h3>
+                        <p>String can be a single, double or back stick quotes values assigned to a declared variable </p>
+                        <h4>Results</h4> 
+                        
+                        <pre> <div id="myString"></div> </pre>
+                        <figure>
+                            <figcaption> index.js</figcaption>
+                            <pre>
+                                <code class="language-javascript">
+// a string can be in a single or double quotes                
+
+Var myString = "I love code, everything to do with code is my passion"
+
+document.getElementById("myString").innerHTML = myString; // show output in html
+console.log(myString) // show output in console
+                                 
+// Output
+// I love code, everything to do with code is my passion
+                            
+                                        
+                                </code>
+                            </pre>
+                        </figure>
+                    </div>
+
+                    <br>
+                    <div class="string-anipulation">
+                    <h4>string manipulation</h4> 
+                   
+                    <pre> <div id="myStringEscapeQuotes"></div> </pre>
+                    <pre> <div id="doubleAndSingleQuotes"></div> </pre>
+                    <!-- <div id="manipulating-string"></div> -->
+                    <br>
+                
+                    <figure>
+                        <figcaption> index.js</figcaption>
+                        <pre>
+                            <code class="language-javascript">
+// escaping a literal quotes in a string
+// a string can be in a single or double quotes
+                
+// use \ to escape character in a double quotes
+var myStringEscapeQuotes = "I am \" Developer \" I love coding in JavaScript\""
+
+document.getElementById("myStringEscapeQuotes").innerHTML = myStringEscapeQuotes; // show output in html
+console.log(myStringEscapeQuotes) // show output in html
+                
+// Output
+// I am " Developer " I love coding in JavaScript and html
+                
+// use single quote outside a double quotes characters
+var doubleAndSingleQuotes = 'Html is " basic code " for all beginners" '
+                
+document.getElementById("doubleAndSingleQuotes").innerHTML = doubleAndSingleQuotes; // show output in html      
+console.log(doubleAndSingleQuotes) // show output in console
+                
+// Output
+// Html is " basic code " for all beginners"
+                
+// use \n for next line and \t for tab
+var myStringManipulation = 'I am first line \n\t\ I am second line with tab \n I am a third line"'
+                
+document.getElementById("manipulating-string").innerHTML = myStringManipulation; // output in html
+console.log(myStringManipulation)
+                
+// results in console
+// I am first line
+    // I am second line with tab
+// I am a third line
+                
+                                </code>
+                            </pre>
+                    </figure>
+                    </div>
+                </div>
+                <br>
                 <div class="stringAdd">
                     <h3>Adding strings</h3>
-                    <p>Making a single string by connecting different strings by addition symbol.</p>
+                    <p>Using <mark>(+)</mark> operator to add different strings to a single string</p>
                     
                     <h4>Results</h4>
                     <pre> <div id="stringAdd"></div> </pre>
@@ -196,11 +351,64 @@ console.log(sentence) // show output in console
                 </div>
             </div>
              <br>
+
+            <div class="length">
+                <h3>String Length</h3>
+                <p>Showing the number of letters in the word using <mark>length</mark></p>
+            
+                <h4>Results</h4>
+                <pre> <div id=length></div> </pre>
+                <figure>
+                    <figcaption>
+                        index.js
+                    </figcaption>
+                    <pre>
+                                    <code class="language-javascript">
+            var number = 0 // initial value is 0
+            var name = "anita" // the value
+            length = name.length // all leters in the variable anita
+            
+            document.getElementById("length").innerHTML = length; // show output in html
+            console.log(length) // show output in console
+            
+            // Output
+            // 5
+                                    </code>
+                                </pre>
+                </figure>
+            </div>
+            <br>
+
             <div class="array">
 
                 <h3>Array</h3>
-                <p>Nested arrays</p>
+               <p>An array is a special variable, which can hold more than one value at a time.</p> 
+               
+                <span>1) Single array</span> 
                 
+                <h4>Results</h4>
+                <pre> <div id=singleArray> </div> </pre>
+
+                <figure>
+                    <figcaption>index.js</figcaption>
+                    <pre>
+                        <code class="language-javascript">
+var mySingleArray = [
+    [" Helen ", " Dorminic ", " Irene ", " maureen ", " Emmy ", " Cate ", " Moses "]
+]
+                
+document.getElementById("singleArray").innerHTML = mySingleArray;
+console.log(myarray) // show output in console
+                
+// Output
+// Helen , Dorminic , Irene , maureen , Emmy , Cate , Moses
+                                    </code>
+                                  </pre>
+                </figure>
+
+                <br>
+                <span>2) Nested arrays</span>
+                <p>Having more arrays within a single array</p>
                 <h4>Results</h4>
                <pre> <div id=array> </div> </pre> 
                 <br>
@@ -285,91 +493,6 @@ console.log(lastnameInarray) // show output in console
                 </figure>
             </div>
              <br>
-            
-            <div class="length">
-                <h3>showing length of my name</h3>
-                <p>shoing the number of letters in the word using <mark>length</mark></p>
-                
-                <h4>Results</h4>
-                <pre> <div id=length></div> </pre>
-                <figure>
-                    <figcaption>
-                        index.js
-                    </figcaption>
-                    <pre>
-                        <code class="language-javascript">
-var number = 0 // initial value is 0
-var name = "anita" // the value
-length = name.length // all leters in the variable anita
-
-document.getElementById("length").innerHTML = length; // show output in html
-console.log(length) // show output in console
-
-// Output
-// 5
-                        </code>
-                    </pre>
-                </figure>
-            </div>
-             <br>
-
-            <div class="manipulating-string">
-                <h3>Strings</h3>
-                
-                <h4>Results</h4>
-                <pre> <div id="myString"></div> </pre>
-                <div id="myStringEscapeQuotes"></div>
-                <div id="doubleAndSingleQuotes"></div>
-                <!-- <div id="manipulating-string"></div> -->
-                <br>
-                
-                <figure>
-                    <figcaption> index.js</figcaption>
-                    <pre>
-                    <code class="language-javascript">
-// escaping a literal quotes in a string
-// a string can be in a single or double quotes
-
-// strings
-myString = "I love code, everything to do with code"
-document.getElementById("myString").innerHTML = myString; // show output in html
-console.log(myString) // show output in console
-
-// Output
-// I love code, everything to do with code
-
-// use \ to escape character in a double quotes
-var myStringEscapeQuotes = "I am \" Developer \" I love coding in JavaScript\""
-document.getElementById("myStringEscapeQuotes").innerHTML = myStringEscapeQuotes; // show output in html
-console.log(myStringEscapeQuotes) // show output in html
-
-// Output
-// I am " Developer " I love coding in JavaScript and html
-
-// use single quote outside a double quotes characters
-var doubleAndSingleQuotes = 'Html is " basic code " for all beginners" '
-document.getElementById("doubleAndSingleQuotes").innerHTML = doubleAndSingleQuotes; // show output in html
-console.log(doubleAndSingleQuotes) // show output in console
-
-// Output
-// Html is " basic code " for all beginners"
-
-// use \n for next line and \t for tab
-var myStringManipulation = 'I am first line \n\t\ I am second line with tab \n I am a third line"'
-
-document.getElementById("manipulating-string").innerHTML = myStringManipulation; // output in html
-console.log(myStringManipulation)
-
-// results in console
-// I am first line
-    // I am second line with tab
-// I am a third line
-
-                    </code>
-                </pre>
-                
-                </figure>
-            </div>
         </div>
     </div>
     <!-- <script src="app.js"></script> -->

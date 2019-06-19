@@ -26,13 +26,18 @@ console.log(sum)
 var Substraction = 20 - 10
 console.log(Substraction)
 
-var multiply = 10 * 10
+var multiply = 10
+
+multiply *= 10
 console.log(multiply)
 
 var divide = 20/2
 console.log(divide)
 
-var remainder = 11 % 2
+var remainder = 11
+
+remainder %= 2
+
 console.log(remainder)
 
 var name = " Anita "
@@ -43,6 +48,10 @@ var days = " from Monday to Friday "
 sentence = name + verb + place + days
 console.log(sentence)
 
+// single array
+var mySingleArray = [
+  [" Helen ", " Dorminic ", " Irene ", " maureen ", " Emmy ", " Cate ", " Moses "]
+]
 // += add to existing value
 var myarray = [
 [" Anita ", " Maryann ", " Paul ", " Damaris ", " Edward ", " James ", " Kelly "],
@@ -90,7 +99,7 @@ var string = "anita" //string is put in quotes it might be single or double.
 
 //  string
 
-var myString = "I love code, everything to do with code"
+var myString = "I love code, everything to do with code is my passion"
 
 
 // escaping a literal quotes in a string
@@ -124,6 +133,7 @@ fillwords();
 console.log(fillwords("girl", "20", "Nairobi", "Web design"))
 
 document.getElementById("missingletter").innerHTML = c;
+document.getElementById("singleArray").innerHTML = mySingleArray;
 document.getElementById("array").innerHTML = myarray;
 document.getElementById("wordblank").innerHTML = results
 document.getElementById("lastname").innerHTML = lastnameInarray;
